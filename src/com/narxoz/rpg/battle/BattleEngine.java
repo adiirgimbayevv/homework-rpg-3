@@ -48,7 +48,9 @@ public final class BattleEngine {
                     result.addLog(attacker.getName()+" attacks "+target.getName()+" for "+dmg+" damage.");
                 }}}
     }
-
+    public void reset(){
+        System.out.println("Battle Engine state has been reset.");
+    }
     private boolean isAnyAlive(List<Combatant> team) {
         return team.stream().anyMatch(Combatant::isAlive);
     }
